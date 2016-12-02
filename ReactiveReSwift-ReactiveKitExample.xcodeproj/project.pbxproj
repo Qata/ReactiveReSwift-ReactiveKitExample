@@ -12,7 +12,30 @@
 		9E3475041DF0FBD7006620EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3475021DF0FBD7006620EA /* Main.storyboard */; };
 		9E3475061DF0FBD7006620EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3475051DF0FBD7006620EA /* Assets.xcassets */; };
 		9E3475091DF0FBD7006620EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3475071DF0FBD7006620EA /* LaunchScreen.storyboard */; };
+		9E3475121DF106DD006620EA /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3475101DF106DD006620EA /* ReactiveKit.framework */; };
+		9E3475131DF106DD006620EA /* ReactiveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3475101DF106DD006620EA /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E3475141DF106DD006620EA /* ReactiveReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3475111DF106DD006620EA /* ReactiveReSwift.framework */; };
+		9E3475151DF106DD006620EA /* ReactiveReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3475111DF106DD006620EA /* ReactiveReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E3475181DF106F0006620EA /* ReactiveReSwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3475171DF106F0006620EA /* ReactiveReSwiftBridge.swift */; };
+		9E4774B91DF13491002EBA8B /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774B41DF13491002EBA8B /* Actions.swift */; };
+		9E4774BA1DF13491002EBA8B /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774B61DF13491002EBA8B /* CounterReducer.swift */; };
+		9E4774BB1DF13491002EBA8B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774B81DF13491002EBA8B /* AppState.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E3475161DF106DD006620EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9E3475151DF106DD006620EA /* ReactiveReSwift.framework in Embed Frameworks */,
+				9E3475131DF106DD006620EA /* ReactiveKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9E3474FB1DF0FBD7006620EA /* ReactiveReSwift-ReactiveKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveReSwift-ReactiveKitExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +45,12 @@
 		9E3475051DF0FBD7006620EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E3475081DF0FBD7006620EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E34750A1DF0FBD7006620EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E3475101DF106DD006620EA /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
+		9E3475111DF106DD006620EA /* ReactiveReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveReSwift.framework; path = Carthage/Build/iOS/ReactiveReSwift.framework; sourceTree = "<group>"; };
+		9E3475171DF106F0006620EA /* ReactiveReSwiftBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveReSwiftBridge.swift; sourceTree = "<group>"; };
+		9E4774B41DF13491002EBA8B /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		9E4774B61DF13491002EBA8B /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		9E4774B81DF13491002EBA8B /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3475141DF106DD006620EA /* ReactiveReSwift.framework in Frameworks */,
+				9E3475121DF106DD006620EA /* ReactiveKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +69,8 @@
 		9E3474F21DF0FBD7006620EA = {
 			isa = PBXGroup;
 			children = (
+				9E3475101DF106DD006620EA /* ReactiveKit.framework */,
+				9E3475111DF106DD006620EA /* ReactiveReSwift.framework */,
 				9E3474FD1DF0FBD7006620EA /* ReactiveReSwift-ReactiveKitExample */,
 				9E3474FC1DF0FBD7006620EA /* Products */,
 			);
@@ -54,6 +87,10 @@
 		9E3474FD1DF0FBD7006620EA /* ReactiveReSwift-ReactiveKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				9E4774B31DF13491002EBA8B /* Actions */,
+				9E4774B51DF13491002EBA8B /* Reducers */,
+				9E4774B71DF13491002EBA8B /* State */,
+				9E3475171DF106F0006620EA /* ReactiveReSwiftBridge.swift */,
 				9E3474FE1DF0FBD7006620EA /* AppDelegate.swift */,
 				9E3475001DF0FBD7006620EA /* ViewController.swift */,
 				9E3475021DF0FBD7006620EA /* Main.storyboard */,
@@ -62,6 +99,30 @@
 				9E34750A1DF0FBD7006620EA /* Info.plist */,
 			);
 			path = "ReactiveReSwift-ReactiveKitExample";
+			sourceTree = "<group>";
+		};
+		9E4774B31DF13491002EBA8B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774B41DF13491002EBA8B /* Actions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		9E4774B51DF13491002EBA8B /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774B61DF13491002EBA8B /* CounterReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		9E4774B71DF13491002EBA8B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774B81DF13491002EBA8B /* AppState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +135,7 @@
 				9E3474F71DF0FBD7006620EA /* Sources */,
 				9E3474F81DF0FBD7006620EA /* Frameworks */,
 				9E3474F91DF0FBD7006620EA /* Resources */,
+				9E3475161DF106DD006620EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,7 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E3475011DF0FBD7006620EA /* ViewController.swift in Sources */,
+				9E4774BA1DF13491002EBA8B /* CounterReducer.swift in Sources */,
+				9E4774B91DF13491002EBA8B /* Actions.swift in Sources */,
+				9E4774BB1DF13491002EBA8B /* AppState.swift in Sources */,
 				9E3474FF1DF0FBD7006620EA /* AppDelegate.swift in Sources */,
+				9E3475181DF106F0006620EA /* ReactiveReSwiftBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +324,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReactiveReSwift-ReactiveKitExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReactiveReSwift-ReactiveKitExample";
@@ -270,6 +340,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReactiveReSwift-ReactiveKitExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReactiveReSwift-ReactiveKitExample";
@@ -297,6 +371,7 @@
 				9E34750F1DF0FBD7006620EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
