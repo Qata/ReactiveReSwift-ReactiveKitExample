@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="kdm-u7-pYc">
             <objects>
-                <viewController id="ogX-M3-2xd" customClass="ViewController" customModule="ReactiveReSwift_PromiseKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ogX-M3-2xd" customClass="ViewController" customModule="ReactiveReSwift_ReactiveKitExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nn1-xR-aAq"/>
                         <viewControllerLayoutGuide type="bottom" id="Gm7-sz-MpK"/>
